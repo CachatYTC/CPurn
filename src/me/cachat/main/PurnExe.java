@@ -19,10 +19,12 @@ public class PurnExe implements CommandExecutor {
         Player p = (Player) s;
         
         if (args.length == 0 || args.length > 1) {
-        	p.sendMessage("\u00a74/purn [���]");
+        	p.sendMessage("\u00a74/purn [íèê]");
         }
         
         Bukkit.getPlayer(args[0]).getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(0.01);
+		
+	p.sendMessage("\u00a7aУспешно отпустили игрока "+args[0]);
         
 		return true;
 	}
