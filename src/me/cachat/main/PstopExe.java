@@ -18,13 +18,15 @@ public class PstopExe implements CommandExecutor {
         Player p = (Player) s;
         
         if (args.length == 0 || args.length > 1) {
-        	p.sendMessage("\u00a74/purn [���]");
+        	p.sendMessage("\u00a74/purn [íèê]");
         }
         
         Player target = Bukkit.getPlayer(args[0]);
         
         target.setWalkSpeed(0);
         target.setFlySpeed(0);
+		
+	p.sendMessage("\u00a7aУспешно заморозили игрока "+args[0]);
         
 		return true;
 	}
