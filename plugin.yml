@@ -1,0 +1,11 @@
+name: CPurn
+main: me.cachat.main.CPurn
+version: 0.1
+author: Cachat
+commands:
+  purn:
+    usage: /purn [nick]
+    description: purns player
+  pstop:
+    usage: /psop [nick]
+    description: stops player
