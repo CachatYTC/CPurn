@@ -23,8 +23,7 @@ public class PstopExe implements CommandExecutor {
         
         Player target = Bukkit.getPlayer(args[0]);
         
-        target.setWalkSpeed(0);
-        target.setFlySpeed(0);
+	Bukkit.getPlayer(args[0]).getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(0);
 		
 	p.sendMessage("\u00a7aУспешно заморозили игрока "+args[0]);
         
